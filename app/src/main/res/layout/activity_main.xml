@@ -70,7 +70,7 @@
             android:layout_marginBottom="20dp"
             android:hint="•••••••••••••"
             android:inputType="textPassword"
-            android:textColor="#000"
+            android:textColor="#fff"
             android:textColorHint="#d0cccc"
             />
 
