@@ -43,6 +43,7 @@
     <!-- fim header -->
 
     <LinearLayout
+        android:id="@+id/homeInfo"
         android:layout_below="@+id/homeHeader"
         android:layout_width="match_parent"
         android:layout_height="120dp"
@@ -70,7 +71,26 @@
             />
 
     </LinearLayout>
+<!-- inicio home main-->
+    <RelativeLayout
+        android:layout_below="@+id/homeInfo"
+        android:layout_width="match_parent"
+        android:layout_height="470dp"
+        android:background="#dadada"
+        android:layout_marginTop="15dp"
+        >
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/group3"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="10dp"
+            />
+    </RelativeLayout>
+<!--  fim home main  -->
+
+<!--  inicio toolbar inferior  -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -103,6 +123,7 @@
             android:layout_weight="1"
             />
 
-
     </LinearLayout>
+<!--   fim toolbar inferior -->
+
 </RelativeLayout>
