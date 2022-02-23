@@ -96,7 +96,7 @@
         android:textAllCaps="false"
         android:textColor="#fff"
         android:textSize="30dp"
-        android:textFontWeight="700"
+        android:textStyle="bold"
         android:layout_alignParentBottom="true"
         />
 
