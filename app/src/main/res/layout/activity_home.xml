@@ -19,7 +19,8 @@
             android:layout_width="60dp"
             android:layout_height="match_parent"
             android:layout_marginStart="20dp"
-            android:src="@drawable/ic_action_menu" />
+            android:src="@drawable/ic_action_menu"
+            />
 
         <TextView
             android:id="@+id/homeLogo"
@@ -97,16 +98,17 @@
         android:layout_alignParentBottom="true"
         android:background="#737D8C"
         android:orientation="horizontal"
-        android:padding="8dp"
         android:weightSum="3"
         >
-
 
         <ImageView
             android:layout_width="40dp"
             android:layout_height="match_parent"
             android:src="@drawable/ic_action_profile"
             android:layout_weight="1"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:onClick="openProfile"
             />
 
         <ImageView
@@ -114,6 +116,9 @@
             android:layout_height="match_parent"
             android:src="@drawable/ic_action_home"
             android:layout_weight="1"
+            android:background="#01b969"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
             />
 
         <ImageView
@@ -121,6 +126,8 @@
             android:layout_height="match_parent"
             android:src="@drawable/id_action_settings"
             android:layout_weight="1"
+            android:paddingTop="8dp"
+            android:paddingBottom="2dp"
             />
 
     </LinearLayout>
