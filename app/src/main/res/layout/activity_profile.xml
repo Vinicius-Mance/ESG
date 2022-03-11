@@ -46,10 +46,6 @@
         </LinearLayout>
         <!-- fim header -->
 <!--começo homeInfo-->
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
     <LinearLayout
         android:id="@+id/homeInfo"
         android:layout_width="match_parent"
