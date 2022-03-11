@@ -96,7 +96,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
-        android:background="#737D8C"
+        android:background="#80ccec"
         android:orientation="horizontal"
         android:weightSum="3"
         >
@@ -116,7 +116,7 @@
             android:layout_height="match_parent"
             android:src="@drawable/ic_action_home"
             android:layout_weight="1"
-            android:background="#01b969"
+            android:background="#4bc0b0"
             android:paddingTop="6dp"
             android:paddingBottom="6dp"
             />
