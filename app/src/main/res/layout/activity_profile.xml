@@ -45,212 +45,222 @@
                 android:src="@drawable/ic_action_bell" />
         </LinearLayout>
         <!-- fim header -->
-<!--começo homeInfo-->
-    <LinearLayout
-        android:id="@+id/homeInfo"
-        android:layout_width="match_parent"
-        android:layout_height="170dp"
+    <ScrollView
         android:layout_below="@+id/homeHeader"
-        android:background="@color/main_green"
-        android:orientation="vertical">
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="150dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:background="@drawable/circle"
-            android:src="@drawable/profile_icon" />
-
-    </LinearLayout>
-<!--fim home info-->
-    <RelativeLayout
-        android:id="@+id/profileInfo"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/homeInfo"
-        android:background="#dadada"
-        android:orientation="horizontal"
-        android:padding="10dp">
-
-        <TextView
-            android:id="@+id/nomePerfil"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="André Souza"
-            android:textAlignment="center"
-            android:textColor="#000"
-            android:textSize="35dp" />
-
-        <LinearLayout
-            android:id="@+id/progressBarGroup"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/nomePerfil"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="-1dp"
-            android:padding="5dp">
-
-            <ProgressBar
-                android:id="@+id/lvlProgressBar"
-                style="?android:attr/progressBarStyleHorizontal"
-                android:layout_width="250dp"
-                android:layout_height="20dp"
-                android:scaleY="10"
-                android:theme="@style/ProgressBarStyle" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_action_crown" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/progressBarGroup"
-            android:layout_centerHorizontal="true"
-            android:background="@drawable/round_rectangle"
-            android:backgroundTint="@color/light_green"
-            android:orientation="vertical"
-            android:padding="5dp"
-
-            >
-
-            <TextView
-                android:id="@+id/perfilHeader"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="Créditos atuais"
-                android:textAlignment="center"
-                android:textAllCaps="false"
-                android:textColor="#000"
-                android:textSize="35dp" />
-
-            <TextView
-                android:id="@+id/perfilHeader"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="160 PDPs"
-                android:textAlignment="center"
-                android:textAllCaps="false"
-                android:textColor="#000"
-                android:textSize="20dp" />
-
-        </LinearLayout>
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/profileInfo"
-        android:background="#c8c4c4"
-        android:padding="10dp"
+        android:layout_marginBottom="50dp"
         >
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             >
+        <!--começo homeInfo-->
+            <LinearLayout
+                android:id="@+id/homeInfo"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="@color/main_green"
+                android:orientation="vertical">
 
-            <TextView
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle"
+                    android:src="@drawable/profile_icon" />
+
+            </LinearLayout>
+                <!--fim home info-->
+                <!-- começo profile info-->
+                    <RelativeLayout
+                        android:id="@+id/profileInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/homeInfo"
+                        android:background="#dadada"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/nomePerfil"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="André Souza"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="35dp" />
+
+                        <LinearLayout
+                            android:id="@+id/progressBarGroup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/nomePerfil"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="-1dp"
+                            android:padding="5dp">
+
+                            <ProgressBar
+                                android:id="@+id/lvlProgressBar"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="250dp"
+                                android:layout_height="20dp"
+                                android:scaleY="10"
+                                android:theme="@style/ProgressBarStyle" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_action_crown" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/progressBarGroup"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/round_rectangle"
+                            android:backgroundTint="@color/light_green"
+                            android:orientation="vertical"
+                            android:padding="5dp"
+
+                            >
+
+                            <TextView
+                                android:id="@+id/perfilHeader"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="Créditos atuais"
+                                android:textAlignment="center"
+                                android:textAllCaps="false"
+                                android:textColor="#000"
+                                android:textSize="35dp" />
+
+                            <TextView
+                                android:id="@+id/perfilHeader"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="160 PDPs"
+                                android:textAlignment="center"
+                                android:textAllCaps="false"
+                                android:textColor="#000"
+                                android:textSize="20dp" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+<!--                    fim profile info  -->
+<!--            começo reports-->
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:padding="5dp"
-                android:text="Últimas participações:"
-                android:textAlignment="center"
-                android:textColor="#000"
-                android:textSize="25dp" />
+                android:layout_below="@+id/profileInfo"
+                android:background="#c8c4c4"
+                android:padding="10dp">
 
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Report de Reciclagem"
-                    android:textAlignment="center"
-                    android:textColor="#000"
-                    android:textSize="25dp"
-                    android:background="@drawable/round_rectangle"
-                    android:backgroundTint="#d8d4d4"
-                    android:layout_marginBottom="10dp"
-                    android:padding="5dp"
-                    />
+                    android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Report de Saúde"
-                    android:textAlignment="center"
-                    android:textColor="#000"
-                    android:textSize="25dp"
-                    android:background="@drawable/round_rectangle"
-                    android:backgroundTint="#d8d4d4"
-                    android:layout_marginBottom="10dp"
-                    android:padding="5dp"
-                    />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:padding="5dp"
+                        android:text="Últimas participações:"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="25dp" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Report de Saúde"
-                    android:textAlignment="center"
-                    android:textColor="#000"
-                    android:textSize="25dp"
-                    android:background="@drawable/round_rectangle"
-                    android:backgroundTint="#d8d4d4"
-                    android:layout_marginBottom="10dp"
-                    android:padding="5dp"
-                    />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/round_rectangle"
+                        android:backgroundTint="#d8d4d4"
+                        android:padding="5dp"
+                        android:text="Report de Reciclagem"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="25dp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Report de Reciclagem"
-                android:textAlignment="center"
-                android:textColor="#000"
-                android:textSize="25dp"
-                android:background="@drawable/round_rectangle"
-                android:backgroundTint="#d8d4d4"
-                android:layout_marginBottom="10dp"
-                android:padding="5dp"
-                />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/round_rectangle"
+                        android:backgroundTint="#d8d4d4"
+                        android:padding="5dp"
+                        android:text="Report de Saúde"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="25dp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Report de Saúde"
-                android:textAlignment="center"
-                android:textColor="#000"
-                android:textSize="25dp"
-                android:background="@drawable/round_rectangle"
-                android:backgroundTint="#d8d4d4"
-                android:layout_marginBottom="10dp"
-                android:padding="5dp"
-                />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/round_rectangle"
+                        android:backgroundTint="#d8d4d4"
+                        android:padding="5dp"
+                        android:text="Report de Saúde"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="25dp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Report de Saúde"
-                android:textAlignment="center"
-                android:textColor="#000"
-                android:textSize="25dp"
-                android:background="@drawable/round_rectangle"
-                android:backgroundTint="#d8d4d4"
-                android:layout_marginBottom="10dp"
-                android:padding="5dp"
-                />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/round_rectangle"
+                        android:backgroundTint="#d8d4d4"
+                        android:padding="5dp"
+                        android:text="Report de Reciclagem"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="25dp" />
 
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/round_rectangle"
+                        android:backgroundTint="#d8d4d4"
+                        android:padding="5dp"
+                        android:text="Report de Saúde"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/round_rectangle"
+                        android:backgroundTint="#d8d4d4"
+                        android:padding="5dp"
+                        android:text="Report de Saúde"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="25dp" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+<!--            fim reports-->
         </LinearLayout>
-    </RelativeLayout>
+    </ScrollView>
         <!--  inicio toolbar inferior  -->
         <LinearLayout
             android:layout_width="match_parent"
