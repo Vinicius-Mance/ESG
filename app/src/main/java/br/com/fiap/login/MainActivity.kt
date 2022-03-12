@@ -35,7 +35,10 @@ class MainActivity : AppCompatActivity() {
 
                 response.body()?.let {
                     if (it.password == userPassword.text.toString()) {
-                        saveUser(it.full_name.toString(),it.photo.toString(),it.points.toString())
+                        val name : String = it.full_name ?: it.user_name
+                        val photo : String = it.photo
+                        val points : String = it.points
+                        saveUser(name,photo,points)
                         goToHome()
                     } else {
                         Toast.makeText(this@MainActivity, "Usuário ou senha incorretos", Toast.LENGTH_LONG).show()
@@ -59,6 +62,7 @@ class MainActivity : AppCompatActivity() {
 
         val persistenceUser = this.getSharedPreferences("userinfo", Context.MODE_PRIVATE)
         val editor = persistenceUser.edit()
+
 
         editor.putString("fullName",fullName)
         editor.putString("photo",photo)

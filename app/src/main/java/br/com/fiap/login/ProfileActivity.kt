@@ -5,7 +5,6 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.ProgressBar
 import android.widget.TextView
@@ -22,12 +21,12 @@ class ProfileActivity : AppCompatActivity() {
 
         val userinfo = this.getSharedPreferences("userinfo", Context.MODE_PRIVATE)
 
-        val name = userinfo.getString("fullName", "Usuário")
-        val photo = userinfo.getString("photo", "@drawable/profile_icon")
+        val name = userinfo.getString("fullName", "Usuário sem nome")
+        val photo = userinfo.getString("photo", "https://t4.ftcdn.net/jpg/00/64/67/63/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg")
         val points = userinfo.getString("points", "60")
 
-        nomePerfil.text = name
-        perfilPontos.text = "PdPs: "+points
+        nomePerfil.setText(name)
+        perfilPontos.setText("PdPs: "+points)
         Glide.with(this).load(photo).into(iconePerfil!!)
 
 
@@ -35,7 +34,7 @@ class ProfileActivity : AppCompatActivity() {
 
         lvlProgressBar.max = 1000
 
-        var progress : Int =  points?.toInt() ?: 60
+        var progress : Int =  points!!.toInt()
 
         progress = progress * 10
         
