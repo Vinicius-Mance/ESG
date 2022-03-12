@@ -23,7 +23,6 @@
                 />
 
             <TextView
-                android:id="@+id/perfilHeader"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:layout_gravity="center"
@@ -65,6 +64,7 @@
                 android:orientation="vertical">
 
                 <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iconePerfil"
                     android:layout_width="150dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
@@ -130,7 +130,6 @@
                             >
 
                             <TextView
-                                android:id="@+id/perfilHeader"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
@@ -143,7 +142,7 @@
                                 android:textSize="35dp" />
 
                             <TextView
-                                android:id="@+id/perfilHeader"
+                                android:id="@+id/perfilPontos"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"

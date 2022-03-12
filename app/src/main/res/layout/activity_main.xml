@@ -32,19 +32,20 @@
             android:drawableStart="@drawable/ic_email_24"
             android:drawablePadding="5dp"
             android:drawableTint="#000"
-            android:text="Email"
+            android:text="Nome de usuário"
             android:textColor="#000"
             android:textSize="18dp" />
         <!-- input email-->
         <EditText
+            android:id="@+id/userName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             android:layout_marginBottom="20dp"
-            android:hint="email@hotmail.com"
-            android:inputType="textEmailAddress"
+            android:hint="Vinicius-Mance"
+            android:inputType="text"
             android:textColor="#000"
             android:textColorHint="#746464"/>
 
@@ -62,6 +63,7 @@
             android:textSize="18dp" />
         <!-- input senha -->
         <EditText
+            android:id="@+id/userPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
